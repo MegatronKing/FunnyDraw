@@ -23,6 +23,7 @@ exec app_process /system/bin com.github.megatronking.funnydraw.Main '$@'
 
 #### 调试模拟器
 每次修改代码后，在猜画小歌小程序中测试都需要重启server，为了简化此过程，可以直接在App内调试。点击首页“当前应用调试”。
+
 ![](https://github.com/MegatronKing/FunnyDraw/blob/master/screenshot/c.png)
 
 #### 编写一个简单的Sample，比如圆形
@@ -98,28 +99,28 @@ public class WineGlassSample implements Sample {
 
 ### API文档
 
-##### LineMotionDrawer 
+#### LineMotionDrawer 
 绘制直线
 ```java
 // 从坐标(500,500)直线绘制到坐标(600, 600)，绘制时间1000ms
 LineMotionDrawer drawer = new LineMotionDrawer(500, 500, 600, 600, 1000);
 ```
 
-##### CircleMotionDrawer 
+#### CircleMotionDrawer 
 绘制圆形
 ```java
 // 以坐标(500,500)为圆心，100为半径，按顺时针绘制，绘制时间1000ms
 CircleMotionDrawer drawer = new CircleMotionDrawer(500, 500, 100, 1000);
 ```
 
-##### OvalMotionDrawer 
+#### OvalMotionDrawer 
 绘制椭圆形
 ```java
 // 以坐标(500,500)为圆心，100为x轴半径，50为y轴半径，按顺时针绘制，绘制时间1000ms
 OvalMotionDrawer drawer = new OvalMotionDrawer(500, 500, 100, 50, 1000);
 ```
 
-##### RectMotionDrawer 
+#### RectMotionDrawer 
 绘制矩形
 ```java
 // 以坐标(100,100)、(500,100)、(500,500)、(100,500)为四个矩形点，按顺时针绘制，绘制时间1000ms
@@ -127,26 +128,26 @@ Rect rect = new Rect(100, 100, 500, 500);
 RectMotionDrawer drawer = new RectMotionDrawer(rect, 1000);
 ```
 
-##### TriangleMotionDrawer 
+#### TriangleMotionDrawer 
 绘制三角形
 ```java
 // 以坐标(100,100)、(300,100)、(200,200)为三角形顶点，按顺时针绘制，绘制时间1000ms
 TriangleMotionDrawer drawer = new TriangleMotionDrawer(100, 100, 300, 100, 200, 200, 1000);
 ```
 
-##### QuadBezierMotionDrawer 
+#### QuadBezierMotionDrawer 
 绘制二阶贝塞尔曲线
 ```java
 // 以坐标(100,100)为曲线起点、坐标(300,300)为曲线终点、坐标(200,200)为控制点，绘制时间1000ms
 QuadBezierMotionDrawer drawer = new QuadBezierMotionDrawer(100, 100, 300, 300, 200, 200, 1000);
 ```
 
-##### CubicBezierMotionDrawer 
+#### CubicBezierMotionDrawer 
 绘制三阶贝塞尔曲线
 ```java
 // 以坐标(100,100)为曲线起点、坐标(300,300)为曲线终点、坐标(200,200)和(200,250)为控制点，绘制时间1000ms
 CubicBezierMotionDrawer drawer = new CubicBezierMotionDrawer(100, 100, 300, 300, 200, 200, 200，450, 1000);
 ```
 
-##### MotionDrawerSet 
+#### MotionDrawerSet 
 图形组合器，可以将以上的多个MotionDrawer组合成一个
