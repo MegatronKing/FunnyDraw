@@ -3,7 +3,7 @@
 
 ### 猜画小歌辅助
 #### 第一步：运行安装App并启动
-
+![](https://github.com/MegatronKing/FunnyDraw/blob/master/screenshot/a.png)
 #### 第二步：启动server
 ```
 adb shell
@@ -13,6 +13,7 @@ exec app_process /system/bin com.github.megatronking.funnydraw.Main '$@'
 #### 第三步：点击App中“猜画小歌测试”按钮，同意悬浮窗权限。
 
 #### 第四步：打开微信启动猜画小歌小程序,选择右侧列表中图案进行自动绘制。
+![](https://github.com/MegatronKing/FunnyDraw/blob/master/screenshot/b.png)
 
 #### 注意事项
 - 部分手机需要在开发者模式中打开模拟点击开关，比如小米手机等。
