@@ -5,7 +5,7 @@
 #### 第一步：运行安装App并启动
 ![](https://github.com/MegatronKing/FunnyDraw/blob/master/screenshot/a.png)
 #### 第二步：启动server
-```
+```shell
 adb shell
 export CLASSPATH=/data/local/tmp/com.github.megatronking.funnydraw
 exec app_process /system/bin com.github.megatronking.funnydraw.Main '$@'
@@ -27,7 +27,7 @@ exec app_process /system/bin com.github.megatronking.funnydraw.Main '$@'
 
 #### 编写一个简单的Sample，比如圆形
 使用CircleMotionDrawer开发，定义好圆心、半径、绘制时间即可。
-```
+```java
 public class CircleSample implements Sample {
 
     @NonNull
@@ -43,7 +43,7 @@ public class CircleSample implements Sample {
 
 #### 编写一个复杂的Sample，比如酒杯
 复杂的图案，需要组合各种MotionDrawer，可以使用MotionDrawerSet来组合。
-```
+```java
 public class WineGlassSample implements Sample {
 
     @NonNull
@@ -87,7 +87,7 @@ public class WineGlassSample implements Sample {
 
 #### 将开发好的Sample加入到浮窗列表
 在assets目录的samples.xml文件中配置好sample的类路径和名称。
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <samples package="com.github.megatronking.funnydraw.sample">
     <sample name="酒杯" class=".WineGlassSample"/>
@@ -100,28 +100,28 @@ public class WineGlassSample implements Sample {
 
 ##### LineMotionDrawer 
 绘制直线
-```
+```java
 // 从坐标(500,500)直线绘制到坐标(600, 600)，绘制时间1000ms
 LineMotionDrawer drawer = new LineMotionDrawer(500, 500, 600, 600, 1000);
 ```
 
 ##### CircleMotionDrawer 
 绘制圆形
-```
+```java
 // 以坐标(500,500)为圆心，100为半径，按顺时针绘制，绘制时间1000ms
 CircleMotionDrawer drawer = new CircleMotionDrawer(500, 500, 100, 1000);
 ```
 
 ##### OvalMotionDrawer 
 绘制椭圆形
-```
+```java
 // 以坐标(500,500)为圆心，100为x轴半径，50为y轴半径，按顺时针绘制，绘制时间1000ms
 OvalMotionDrawer drawer = new OvalMotionDrawer(500, 500, 100, 50, 1000);
 ```
 
 ##### RectMotionDrawer 
 绘制矩形
-```
+```java
 // 以坐标(100,100)、(500,100)、(500,500)、(100,500)为四个矩形点，按顺时针绘制，绘制时间1000ms
 Rect rect = new Rect(100, 100, 500, 500);
 RectMotionDrawer drawer = new RectMotionDrawer(rect, 1000);
@@ -129,21 +129,21 @@ RectMotionDrawer drawer = new RectMotionDrawer(rect, 1000);
 
 ##### TriangleMotionDrawer 
 绘制三角形
-```
+```java
 // 以坐标(100,100)、(300,100)、(200,200)为三角形顶点，按顺时针绘制，绘制时间1000ms
 TriangleMotionDrawer drawer = new TriangleMotionDrawer(100, 100, 300, 100, 200, 200, 1000);
 ```
 
 ##### QuadBezierMotionDrawer 
 绘制二阶贝塞尔曲线
-```
+```java
 // 以坐标(100,100)为曲线起点、坐标(300,300)为曲线终点、坐标(200,200)为控制点，绘制时间1000ms
 QuadBezierMotionDrawer drawer = new QuadBezierMotionDrawer(100, 100, 300, 300, 200, 200, 1000);
 ```
 
 ##### CubicBezierMotionDrawer 
 绘制三阶贝塞尔曲线
-```
+```java
 // 以坐标(100,100)为曲线起点、坐标(300,300)为曲线终点、坐标(200,200)和(200,250)为控制点，绘制时间1000ms
 CubicBezierMotionDrawer drawer = new CubicBezierMotionDrawer(100, 100, 300, 300, 200, 200, 200，450, 1000);
 ```
