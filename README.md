@@ -1,7 +1,9 @@
 # FunnyDraw
 绘画天赋不行，编码技术来补，猜画小歌小程序辅助工具。
 
-<span style="color: red">本项目需要广大人民群众支持，赶紧用Pull Request来砸我吧！</span>
+```diff
+-本项目需要广大人民群众支持，赶紧用Pull Request来砸我吧！
+```
 
 ### 猜画小歌辅助
 #### 第一步：运行安装App并启动
