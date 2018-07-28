@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<samples package="com.github.megatronking.funnydraw.sample">
+    <!--按照拼音首字母排序，方便查找-->
+    <sample name="长方形" class=".RectSample"/>
+    <sample name="帆船" class=".ShipSample"/>
+    <sample name="鸡蛋" class=".OvalSample"/>
+    <sample name="金字塔" class=".PyramidSample"/>
+    <sample name="酒杯" class=".WineGlassSample"/>
+    <sample name="梯子" class=".LadderSample"/>
+    <sample name="土豆" class=".CircleSample"/>
+    <sample name="椭圆形" class=".OvalSample"/>
+    <sample name="雨伞" class=".UmbrellaSample"/>
+    <sample name="圆形" class=".CircleSample"/>
+    <sample name="月亮" class=".CircleSample"/>
+    <sample name="正方形" class=".SquareSample"/>
+</samples>

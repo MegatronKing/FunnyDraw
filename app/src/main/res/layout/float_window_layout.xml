@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dip"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/sample_list_switcher"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:background="#99FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/switcher" />
+
+    <ListView
+        android:id="@+id/sample_list"
+        android:layout_width="70dip"
+        android:layout_height="match_parent"
+        android:background="#99FFFFFF"/>
+
+</LinearLayout>

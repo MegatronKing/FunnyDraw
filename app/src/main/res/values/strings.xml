@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FunnyDraw</string>
+    <string name="debug">当前应用调试</string>
+    <string name="run">猜画小歌测试</string>
+    <string name="window_overlay_dialog_message">请先同意悬浮窗权限！</string>
+    <string name="window_overlay_dialog_positive_text">授权</string>
+    <string name="server_connected">服务已连接</string>
+    <string name="server_disconnected">服务未连接</string>
+</resources>

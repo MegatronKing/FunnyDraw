@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.github.megatronking.google.ai.assistant.funnydraw.github.megatronking.google.ai.assistant.ui.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/server_state_icon"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/disconnect"/>
+
+        <TextView
+            android:id="@+id/server_state_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dip"
+            android:text="@string/server_disconnected"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/debug"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/debug"
+        android:textAllCaps="false"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginBottom="80dip"
+        android:layout_gravity="bottom"/>
+
+    <Button
+        android:id="@+id/run"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginBottom="20dip"
+        android:text="@string/run"
+        android:textAllCaps="false"
+        android:layout_gravity="bottom"/>
+
+</FrameLayout>
