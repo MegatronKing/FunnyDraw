@@ -5,6 +5,10 @@
 -本项目需要广大人民群众支持，赶紧用Pull Request来砸我吧！
 ```
 
+### 效果演示
+![](https://github.com/MegatronKing/FunnyDraw/blob/master/screenshot/sample.gif)
+
+
 ### 猜画小歌辅助
 #### 第一步：运行安装App并启动
 ![](https://github.com/MegatronKing/FunnyDraw/blob/master/screenshot/a.png)
