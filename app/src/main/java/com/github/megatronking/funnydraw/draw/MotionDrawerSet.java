@@ -16,7 +16,8 @@ public class MotionDrawerSet implements MotionDrawer {
 
     public MotionDrawerSet(@NonNull MotionDrawer... drawers) {
         if (drawers.length == 0) {
-            throw new RuntimeException("MotionSetDrawer must have at lease one child drawer.");
+            throw new IllegalArgumentException("MotionSetDrawer must have at lease one child " +
+                    "drawer.");
         }
         this.mOrderedMotionDrawer = new OrderedMotionDrawer(drawers);
     }
