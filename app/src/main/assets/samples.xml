@@ -6,6 +6,7 @@
     <sample name="鸡蛋" class=".OvalSample"/>
     <sample name="金字塔" class=".PyramidSample"/>
     <sample name="酒杯" class=".WineGlassSample"/>
+    <sample name="花瓶" class=".VaseSample"/>
     <sample name="门" class=".DoorSample"/>
     <sample name="太阳" class=".SunSample"/>
     <sample name="梯子" class=".LadderSample"/>
