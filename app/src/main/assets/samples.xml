@@ -11,6 +11,7 @@
     <sample name="梯子" class=".LadderSample"/>
     <sample name="土豆" class=".CircleSample"/>
     <sample name="椭圆形" class=".OvalSample"/>
+    <sample name="五角星" class=".FiveStarSample"/>
     <sample name="雨伞" class=".UmbrellaSample"/>
     <sample name="圆形" class=".CircleSample"/>
     <sample name="月亮" class=".CircleSample"/>
