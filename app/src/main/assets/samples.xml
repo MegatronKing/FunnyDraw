@@ -9,6 +9,7 @@
     <sample name="花瓶" class=".VaseSample"/>
     <sample name="门" class=".DoorSample"/>
     <sample name="太阳" class=".SunSample"/>
+    <sample name="闪电" class=".FlashSample"/>
     <sample name="梯子" class=".LadderSample"/>
     <sample name="土豆" class=".CircleSample"/>
     <sample name="椭圆形" class=".OvalSample"/>
