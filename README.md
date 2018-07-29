@@ -27,7 +27,7 @@ exec app_process /system/bin com.github.megatronking.funnydraw.Main '$@'
 - 部分手机需要在开发者模式中打开模拟点击开关，比如小米手机等。
 
 
-### 自定义开发及测试
+### 项目参与及调试
 
 #### 调试模拟器
 每次修改代码后，在猜画小歌小程序中测试都需要重启server，为了简化此过程，可以直接在App内调试。点击首页“当前应用调试”。
