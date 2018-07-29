@@ -143,6 +143,17 @@ RectMotionDrawer drawer = new RectMotionDrawer(rect, 1000);
 TriangleMotionDrawer drawer = new TriangleMotionDrawer(100, 100, 300, 100, 200, 200, 1000);
 ```
 
+#### SerialLinesMotionDrawer
+绘制连续线段
+```java
+Point p1 = new Point(0, 0);
+Point p2 = new Point(50, 50);
+Point p3 = new Point(100, 200);
+Point p4 = new Point(200, 500);
+// 连接多个点，按照顺序绘制，绘制时间3000ms
+SerialLinesMotionDrawer drawer = new SerialLinesMotionDrawer(new Point[]{p1, p2, p3, p4}, 3000);
+```
+
 #### QuadBezierMotionDrawer 
 绘制二阶贝塞尔曲线
 ```java
