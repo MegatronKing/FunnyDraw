@@ -21,4 +21,25 @@ public final class GraphUtils {
         return new Point(x, y);
     }
 
+    public static float distance(int p1x, int p1y, int p2x, int p2y) {
+        return distance(new Point(p1x, p1y), new Point(p2x, p2y));
+    }
+
+    public static float distance(Point p1, Point p2) {
+        return (float) Math.sqrt((p1.x - p2.x) * (p1.x - p2.x) + (p1.y - p2.y) * (p1.y - p2.y));
+    }
+
+    public static float distance(Point[] points) {
+        float totalDistance = 0;
+        Point lastPoint = points[0];
+        for (Point p : points) {
+            if (p == lastPoint) {
+                continue;
+            }
+            totalDistance += GraphUtils.distance(lastPoint, p);
+            lastPoint = p;
+        }
+        return totalDistance;
+    }
+
 }
