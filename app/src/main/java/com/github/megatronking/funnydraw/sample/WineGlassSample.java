@@ -19,7 +19,7 @@ public class WineGlassSample implements Sample {
 
     @NonNull
     @Override
-    public MotionDrawer buildDrawer(Canvas canvas) {
+    public MotionDrawer buildDrawer(@NonNull Canvas canvas) {
         int topOvalRadiusX = 200;
         int topOvalRadiusY = 100;
         int topOvalCenterX = canvas.centerX;

@@ -19,7 +19,7 @@ public class LadderSample implements Sample {
 
     @NonNull
     @Override
-    public MotionDrawer buildDrawer(Canvas canvas) {
+    public MotionDrawer buildDrawer(@NonNull Canvas canvas) {
         Point ladderLeftTop = new Point(canvas.centerX - 100, canvas.top + 300);
         Point ladderLeftBottom = new Point(canvas.centerX - 100, canvas.bottom - 300);
         Point ladderRightTop = new Point(canvas.centerX + 100, canvas.top + 300);

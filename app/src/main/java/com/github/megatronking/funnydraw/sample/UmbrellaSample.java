@@ -19,7 +19,7 @@ public class UmbrellaSample implements Sample {
 
     @NonNull
     @Override
-    public MotionDrawer buildDrawer(Canvas canvas) {
+    public MotionDrawer buildDrawer(@NonNull Canvas canvas) {
         Point topPoint = new Point(canvas.centerX, canvas.centerY - 300);
         Point leftPoint = new Point(canvas.centerX - 300, canvas.centerY);
         Point rightPoint = new Point(canvas.centerX + 300, canvas.centerY);

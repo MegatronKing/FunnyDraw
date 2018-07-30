@@ -20,7 +20,7 @@ public class FiveStarSample implements Sample {
 
     @NonNull
     @Override
-    public MotionDrawer buildDrawer(Canvas canvas) {
+    public MotionDrawer buildDrawer(@NonNull Canvas canvas) {
         // Calculate five vertex points.
         int radius = 300;
         Point a = new Point(canvas.centerX, canvas.centerY - radius);

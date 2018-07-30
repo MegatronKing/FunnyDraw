@@ -17,7 +17,7 @@ public class PyramidSample implements Sample {
 
     @NonNull
     @Override
-    public MotionDrawer buildDrawer(Canvas canvas) {
+    public MotionDrawer buildDrawer(@NonNull Canvas canvas) {
         return new TriangleMotionDrawer(canvas.centerX, canvas.centerY - 200,
                 canvas.centerX - 200, canvas.centerY + 200,
                 canvas.centerX + 200, canvas.centerY + 200, 3000);

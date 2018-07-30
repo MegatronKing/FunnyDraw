@@ -20,7 +20,7 @@ public class VaseSample implements Sample {
 
     @NonNull
     @Override
-    public MotionDrawer buildDrawer(Canvas canvas) {
+    public MotionDrawer buildDrawer(@NonNull Canvas canvas) {
         int topOvalRadiusX = 80;
         int topOvalRadiusY = 40;
         int topOvalCenterX = canvas.centerX;

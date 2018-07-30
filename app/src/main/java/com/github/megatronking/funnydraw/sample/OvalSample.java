@@ -17,7 +17,7 @@ public class OvalSample implements Sample {
 
     @NonNull
     @Override
-    public MotionDrawer buildDrawer(Canvas canvas) {
+    public MotionDrawer buildDrawer(@NonNull Canvas canvas) {
         return new OvalMotionDrawer(canvas.centerX, canvas.centerY, canvas.width / 4,
                 canvas.height / 4, 0, DEFAULT_DURATION);
     }

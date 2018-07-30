@@ -19,7 +19,7 @@ public class ShipSample implements Sample {
 
     @NonNull
     @Override
-    public MotionDrawer buildDrawer(Canvas canvas) {
+    public MotionDrawer buildDrawer(@NonNull Canvas canvas) {
         Point bodyLeftTop = new Point(canvas.centerX - 300, canvas.height * 5 / 6);
         Point bodyRightTop = new Point(canvas.centerX + 300, canvas.height * 5 / 6);
         Point bodyLeftBottom = new Point(canvas.centerX - 200, bodyLeftTop.y + 150);

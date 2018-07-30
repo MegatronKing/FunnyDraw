@@ -19,7 +19,7 @@ public class DoorSample implements Sample {
 
     @NonNull
     @Override
-    public MotionDrawer buildDrawer(Canvas canvas) {
+    public MotionDrawer buildDrawer(@NonNull Canvas canvas) {
         Rect rect = new Rect(canvas.centerX - 150, canvas.centerY - 200,
                 canvas.centerX + 150, canvas.centerY + 200);
         LineMotionDrawer drawer1 = new LineMotionDrawer(rect.left, rect.top, rect.right, rect.top,

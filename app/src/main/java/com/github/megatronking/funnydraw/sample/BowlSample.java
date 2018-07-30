@@ -20,7 +20,7 @@ public class BowlSample implements Sample {
 
     @NonNull
     @Override
-    public MotionDrawer buildDrawer(Canvas canvas) {
+    public MotionDrawer buildDrawer(@NonNull Canvas canvas) {
         int topOvalRadiusX = 300;
         int topOvalRadiusY = 80;
         int topOvalCenterX = canvas.centerX;

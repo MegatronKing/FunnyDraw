@@ -19,7 +19,7 @@ public class SunSample implements Sample {
 
     @NonNull
     @Override
-    public MotionDrawer buildDrawer(Canvas canvas) {
+    public MotionDrawer buildDrawer(@NonNull Canvas canvas) {
         int shineOffset1 = 250;
         int shineOffset2 = 400;
         int shineOffset3 = (int) (250 / Math.sqrt(2));

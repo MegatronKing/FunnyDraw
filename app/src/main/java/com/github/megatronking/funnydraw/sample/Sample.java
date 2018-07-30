@@ -29,6 +29,6 @@ public interface Sample {
      * @param canvas Canvas information.
      */
     @NonNull
-    MotionDrawer buildDrawer(Canvas canvas);
+    MotionDrawer buildDrawer(@NonNull Canvas canvas);
 
 }

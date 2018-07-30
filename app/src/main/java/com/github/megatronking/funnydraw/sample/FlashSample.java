@@ -18,7 +18,7 @@ public class FlashSample implements Sample {
 
     @NonNull
     @Override
-    public MotionDrawer buildDrawer(Canvas canvas) {
+    public MotionDrawer buildDrawer(@NonNull Canvas canvas) {
         Point p1 = new Point(canvas.centerX, canvas.centerY - 400);
         Point p2 = new Point(canvas.centerX - 150, canvas.centerY);
         Point p3 = new Point(canvas.centerX + 150, canvas.centerY);

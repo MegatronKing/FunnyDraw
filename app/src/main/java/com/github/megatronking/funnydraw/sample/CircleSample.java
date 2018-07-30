@@ -17,7 +17,7 @@ public class CircleSample implements Sample {
 
     @NonNull
     @Override
-    public MotionDrawer buildDrawer(Canvas canvas) {
+    public MotionDrawer buildDrawer(@NonNull Canvas canvas) {
         return new CircleMotionDrawer(canvas.centerX, canvas.centerY, canvas.width / 4,
                 DEFAULT_DURATION);
     }

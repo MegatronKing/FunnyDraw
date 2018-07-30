@@ -18,7 +18,7 @@ public class SquareSample implements Sample {
 
     @NonNull
     @Override
-    public MotionDrawer buildDrawer(Canvas canvas) {
+    public MotionDrawer buildDrawer(@NonNull Canvas canvas) {
         Rect rect = new Rect(canvas.centerX - canvas.width / 4, canvas.centerY - canvas.width / 4,
                 canvas.centerX + canvas.width / 4, canvas.centerY + canvas.width / 4);
         return new RectMotionDrawer(rect, DEFAULT_DURATION);
