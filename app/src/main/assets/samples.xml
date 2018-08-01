@@ -14,9 +14,10 @@
     <sample name="土豆" class=".CircleSample"/>
     <sample name="椭圆形" class=".OvalSample"/>
     <sample name="碗" class=".BowlSample"/>
+    <sample name="弯月" class=".MoonSample"/>
     <sample name="五角星" class=".FiveStarSample"/>
     <sample name="雨伞" class=".UmbrellaSample"/>
     <sample name="圆形" class=".CircleSample"/>
-    <sample name="月亮" class=".CircleSample"/>
+    <sample name="圆月" class=".CircleSample"/>
     <sample name="正方形" class=".SquareSample"/>
 </samples>
