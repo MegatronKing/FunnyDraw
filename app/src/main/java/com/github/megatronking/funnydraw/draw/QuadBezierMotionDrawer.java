@@ -1,6 +1,7 @@
 package com.github.megatronking.funnydraw.draw;
 
 import android.graphics.Path;
+import android.graphics.Point;
 
 /**
  * Draw quadratic bezier with motion events.
@@ -17,6 +18,10 @@ public class QuadBezierMotionDrawer extends CurveMotionDrawer {
     private int mEndY;
     private int mControlX;
     private int mControlY;
+
+    public QuadBezierMotionDrawer(Point start, Point end, Point control, int duration) {
+        this(start.x, start.y, end.x, end.y, control.x, control.y, duration);
+    }
 
     public QuadBezierMotionDrawer(int startX, int startY, int endX, int endY, int controlX, int controlY,
                                    int duration) {

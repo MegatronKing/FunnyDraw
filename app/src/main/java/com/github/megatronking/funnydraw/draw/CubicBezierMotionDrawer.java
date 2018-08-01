@@ -1,6 +1,7 @@
 package com.github.megatronking.funnydraw.draw;
 
 import android.graphics.Path;
+import android.graphics.Point;
 
 /**
  * Draw cubic bezier with motion events.
@@ -19,6 +20,11 @@ public class CubicBezierMotionDrawer extends CurveMotionDrawer {
     private int mControlY1;
     private int mControlX2;
     private int mControlY2;
+
+    public CubicBezierMotionDrawer(Point start, Point end, Point control1, Point control2,
+                                   int duration) {
+        this(start.x, start.y, end.x, end.y, control1.x, control1.y, control2.x, control2.y, duration);
+    }
 
     public CubicBezierMotionDrawer(int startX, int startY, int endX, int endY, int controlX1, int controlY1,
                                   int controlX2, int controlY2, int duration) {
